@@ -1,8 +1,8 @@
 import React from "react";
 
-function Logo({ width = "100px" }) {
+function Logo() {
   return (
-    <div>
+    <div className="w-32 h-auto">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"

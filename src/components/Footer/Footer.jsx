@@ -5,7 +5,7 @@ import Container from "../container/Container";
 
 function Footer() {
   return (
-    <section className="relative overflow-hidden py-12 bg-gray-900 text-gray-400 border-t border-gray-700 w-full">
+    <section className="relative overflow-hidden py-12 bg-gray-900 text-gray-400 border-t border-gray-700 w-full mx-auto">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
