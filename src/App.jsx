@@ -1,7 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
 import authService from "./appwrite/auth";
-import "./App.css";
 import { login, logout } from "./store/authSlice";
 import { Outlet } from "react-router-dom";
 import { Header, Footer } from "./components/index";
@@ -24,18 +23,14 @@ function App() {
   }, []);
 
   return !loading ? (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-100 w-full h-full">
       {/* Header */}
       <Header />
 
       {/* Main Content */}
-      <main className="flex-grow bg-gray-100">
+      <main className="flex-grow pt-16 w-full">
         {" "}
-        {/* This will give the main content a light background */}
-        <div className="py-8 px-4 sm:px-6 lg:px-8">
-          {/* TODO: Dynamic content */}
-          <Outlet />
-        </div>
+        <Outlet />
       </main>
 
       {/* Footer */}
