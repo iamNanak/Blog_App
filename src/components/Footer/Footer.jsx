@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../Logo";
+// import Logo from "../Logo";
 import Container from "../container/Container";
 
 function Footer() {
@@ -10,7 +10,20 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="mb-6">
-              <Logo width="100px" />
+              {" "}
+              <Link
+                to="/"
+                className=" flex text-4xl text-bold text-center text-white font-bold"
+              >
+                Blogger
+                <lord-icon
+                  src="https://cdn.lordicon.com/rwtswsap.json"
+                  trigger="hover"
+                  colors="primary:#fffff"
+                  speed="1"
+                  style={{ width: "45px", height: "45px" }}
+                ></lord-icon>
+              </Link>
             </div>
             <p className="text-sm">
               &copy; {new Date().getFullYear()} All Rights Reserved.

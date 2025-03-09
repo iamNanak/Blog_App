@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login as authLogin } from "../store/authSlice";
-import { Button, Input, Logo } from "./index";
+import { Button, Input } from "./index";
 import { useDispatch } from "react-redux";
 import authService from "../appwrite/auth";
 import { useForm } from "react-hook-form";
@@ -30,9 +30,21 @@ function Login() {
     <div className="flex items-center justify-center w-full min-h-screen bg-gray-50">
       <div className="w-full max-w-lg bg-white rounded-xl p-10 shadow-lg border border-gray-100">
         <div className="mb-6 flex justify-center">
-          <span className="inline-block w-24">
-            <Logo width="100%" />
-          </span>
+          <div className="inline-block w-24">
+            <Link
+              to="/"
+              className=" flex text-4xl text-bold text-center text-black font-bold"
+            >
+              Blogger
+              <lord-icon
+                src="https://cdn.lordicon.com/rwtswsap.json"
+                trigger="loop"
+                colors="primary:#fffff"
+                speed="1"
+                style={{ width: "45px", height: "45px" }}
+              ></lord-icon>
+            </Link>
+          </div>
         </div>
         <h2 className="text-center text-3xl font-semibold text-gray-800 mb-4">
           Sign into your account

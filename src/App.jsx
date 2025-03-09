@@ -28,7 +28,7 @@ function App() {
       <Header />
 
       {/* Main Content */}
-      <main className="flex-grow pt-16 w-full mx-auto">
+      <main className="flex-grow pt-16 w-full h-full mx-auto">
         {" "}
         <Outlet />
       </main>

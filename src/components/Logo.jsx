@@ -1,29 +1,29 @@
-import React from "react";
+// import { useEffect, useRef } from "react";
+// import { Player } from "@lordicon/react";
 
-function Logo() {
-  return (
-    <div className="w-32 h-auto">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        width="100"
-        height="100"
-      >
-        {/* <!-- Background Circle --> */}
-        <circle cx="50" cy="50" r="45" fill="#4CAF50" />
+// import ICON from "../assets/logo.json";
 
-        {/* <!-- Book Icon --> */}
-        <path d="M30 35 L70 35 L70 75 L30 75 Z" fill="#FFFFFF" />
-        <path d="M30 35 L70 35 L70 40 L30 40 Z" fill="#FFC107" />
-        <path d="M35 40 L65 40 L65 75 L35 75 Z" fill="#FFFFFF" />
-        <path d="M35 40 L65 40 L65 45 L35 45 Z" fill="#FFC107" />
+// export default function App() {
+//   const playerRef = useRef(null);
 
-        {/* <!-- Pen Icon --> */}
-        <path d="M60 25 L75 40 L65 50 L50 35 Z" fill="#2196F3" />
-        <path d="M50 35 L65 50 L60 55 L45 40 Z" fill="#1976D2" />
-      </svg>
-    </div>
-  );
-}
+//   useEffect(() => {
+//     playerRef.current?.playFromBeginning();
+//   }, []);
 
-export default Logo;
+//   return (
+//     <View style={styles.container}>
+//       <Player ref={playerRef} size={96} icon={ICON} />
+//     </View>
+//   );
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     gap: 20,
+//     backgroundColor: "#fff",
+//     alignItems: "center",
+//     justifyContent: "center",
+//     flexDirection: "column",
+//   },
+// });
